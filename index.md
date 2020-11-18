@@ -53,8 +53,8 @@ bar = (
     Bar(
     init_opts = opts.InitOpts(
                 animation_opts=opts.AnimationOpts(animation_delay=1000, animation_easing="elasticOut"),
-                width="900px",
-                height="500px",
+                width="1400px",
+                height="800px",
                  renderer= "svg",
 #                 theme= "westeros"
                             )
@@ -86,14 +86,23 @@ bar.set_global_opts(
 bar.load_javascript()
 bar.render_notebook()
 ```
-<iframe  src="figs/bar_base_config.html"></iframe>
+
+<iframe width="100%" height="800px" src="figs/bar_base_config.html"></iframe>
 
 ## Bar渐变圆柱可视化
 
 
 ```python
 bar = (
-    Bar()
+    Bar(
+        init_opts = opts.InitOpts(
+                animation_opts=opts.AnimationOpts(animation_delay=1000, animation_easing="elasticOut"),
+                width="1400px",
+                height="800px",
+                 renderer= "svg",
+#                 theme= "westeros"
+     )
+       )
     .add_xaxis(Faker.choose())
     .add_yaxis("商家A", Faker.values(), category_gap="60%")
     .set_series_opts(
@@ -119,7 +128,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-<iframe src="figs/bar_color.html"></iframe>
+<iframe width="100%" height="800px" src="figs/bar_color.html"></iframe>
 
 ## Bar柱状图动画延迟
 
@@ -130,7 +139,10 @@ red_bar = [ 100*index for index in np.random.random(100)]
 blue_bar = [ 20*index for index in np.random.random(100)]
 
 bar= (
-    Bar()
+    Bar(init_opts = opts.InitOpts(
+                animation_opts=opts.AnimationOpts(animation_delay=1000, animation_easing="elasticOut"),
+                width="1400px",
+                height="800px",))
     .add_xaxis(xaxis_data=category)
     .add_yaxis(
         series_name="bar", y_axis=red_bar, label_opts=opts.LabelOpts(is_show=False)
@@ -154,7 +166,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-<iframe src="figs/bar_delay.html"></iframe>
+<iframe width="100%" height="800px" src="figs/bar_delay.html"></iframe>
 
 ## Bar-自定义柱状颜色
 
@@ -171,7 +183,10 @@ color_function = """
         }
         """
 bar = (
-    Bar()
+    Bar(init_opts = opts.InitOpts(
+                animation_opts=opts.AnimationOpts(animation_delay=1000, animation_easing="elasticOut"),
+                width="1400px",
+                height="800px",))
     .add_xaxis(Faker.choose())
     .add_yaxis(
         "商家A",
@@ -194,15 +209,17 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-
-<iframe  src="figs/bar_color_define.html"></iframe>
+<iframe width="100%" height="800px" src="figs/bar_color_define.html"></iframe>
 
 ## Bar坐标轴缩放
 
 
 ```python
 bar = (
-    Bar()
+    Bar(init_opts = opts.InitOpts(
+                animation_opts=opts.AnimationOpts(animation_delay=1000, animation_easing="elasticOut"),
+                width="1400px",
+                height="800px",))
     .add_xaxis(Faker.days_attrs)
     .add_yaxis("商家A", Faker.days_values, color=Faker.rand_color())
     .set_global_opts(
@@ -214,12 +231,14 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-<iframe src="figs/bar_slider.html"></iframe>
-
+<iframe width="100%" height="800px" src="figs/bar_slider.html"></iframe>
 
 ```python
 bar= (
-    Bar()
+    Bar(init_opts = opts.InitOpts(
+                animation_opts=opts.AnimationOpts(animation_delay=1000, animation_easing="elasticOut"),
+                width="1400px",
+                height="800px",))
     .add_xaxis(Faker.days_attrs)
     .add_yaxis("商家A", Faker.days_values, color=Faker.rand_color())
     .set_global_opts(
@@ -231,7 +250,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-<iframe  src="figs/bar_inside.html"></iframe>
+<iframe width="100%" height="800px" src="figs/bar_inside.html"></iframe>
 
 ## Bar堆叠显示
 
@@ -239,7 +258,6 @@ bar.render_notebook()
 ```python
 import pandas as pd
 x = pd.DataFrame([[112,34,20,0.2,80,0.8,5,0.5,5,0.5],[23, 56,10,0.1,90,0.9,3,0.3,7,0.7]],columns=['num','num1','reject','rejectRate','pass','passRate','reject1','rejectRate1', 'pass1','passRate1'])
-x.head()
 ```
 
 ```python
@@ -325,10 +343,10 @@ graph = bar.overlap(line)
 '''网格多图'''
 grid = (
     Grid(
-        opts.InitOpts(
-#         width="1600px",
-#         height="500px",
-        )
+init_opts = opts.InitOpts(
+                animation_opts=opts.AnimationOpts(animation_delay=1000, animation_easing="elasticOut"),
+                width="1400px",
+                height="800px",)
     )
     .add( graph, grid_opts=opts.GridOpts(pos_left='8%',pos_right='1%',pos_bottom="8%"))
 )
@@ -336,4 +354,6 @@ grid.load_javascript()
 grid.render_notebook()
 
 ```
-<iframe width="1000px" height="1000px" src="figs/multi_bar.html"></iframe>
+
+
+<iframe width="100%" height="800px" src="figs/multi_bar.html"></iframe>

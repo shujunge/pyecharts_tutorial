@@ -233,25 +233,6 @@ bar.render_notebook()
 
 <iframe width="100%" height="800px" src="figs/bar_slider.html"></iframe>
 
-```python
-bar= (
-    Bar(init_opts = opts.InitOpts(
-                animation_opts=opts.AnimationOpts(animation_delay=1000, animation_easing="elasticOut"),
-                width="1400px",
-                height="800px",))
-    .add_xaxis(Faker.days_attrs)
-    .add_yaxis("商家A", Faker.days_values, color=Faker.rand_color())
-    .set_global_opts(
-        title_opts=opts.TitleOpts(title="Bar-DataZoom（inside）"),
-        datazoom_opts=opts.DataZoomOpts(type_="inside"),
-    )
-)
-bar.load_javascript()
-bar.render_notebook()
-```
-
-<iframe width="100%" height="800px" src="figs/bar_inside.html"></iframe>
-
 ## Bar堆叠显示
 
 

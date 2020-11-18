@@ -336,4 +336,4 @@ grid.load_javascript()
 grid.render_notebook()
 
 ```
-<iframe width="1200px" height="900px" src="figs/multi_bar.html"></iframe>
+<iframe width="1000px" height="1000px" src="figs/multi_bar.html"></iframe>

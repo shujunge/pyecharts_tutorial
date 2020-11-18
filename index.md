@@ -1,4 +1,4 @@
-# [**pyechart教程**](https://github.com/pyecharts/pyecharts-gallery)
+# **pyechart教程**
 
 
 ## 基本介绍

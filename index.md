@@ -366,4 +366,4 @@ c = (
 c.load_javascript()
 c.render_notebook()
 ```
-<iframe width="100%" height="800px" src="figs/multi_bar.html"></iframe>
+<iframe width="100%" height="800px" src="figs/graph.html"></iframe>

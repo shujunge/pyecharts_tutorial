@@ -86,15 +86,7 @@ bar.set_global_opts(
 bar.load_javascript()
 bar.render_notebook()
 ```
-
-
-
-
-    '/Users/wzf/Desktop/code/shujunge_package/Visualization/my_pyecharts/figs/bar_base_config.html'
-
-
-
-<iframe width="100%" height="800px" src="figs/bar_base_config.html"></iframe>
+<iframe  src="figs/bar_base_config.html"></iframe>
 
 ## Bar渐变圆柱可视化
 
@@ -127,14 +119,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-
-
-
-    '/Users/wzf/Desktop/code/shujunge_package/Visualization/my_pyecharts/figs/bar_color.html'
-
-
-
-<iframe width="100%" height="800px" src="figs/bar_color.html"></iframe>
+<iframe src="figs/bar_color.html"></iframe>
 
 ## Bar柱状图动画延迟
 
@@ -169,14 +154,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-
-
-
-    '/Users/wzf/Desktop/code/shujunge_package/Visualization/my_pyecharts/figs/bar_delay.html'
-
-
-
-<iframe width="100%" height="800px" src="figs/bar_delay.html"></iframe>
+<iframe src="figs/bar_delay.html"></iframe>
 
 ## Bar-自定义柱状颜色
 
@@ -217,13 +195,7 @@ bar.render_notebook()
 ```
 
 
-
-
-    '/Users/wzf/Desktop/code/shujunge_package/Visualization/my_pyecharts/figs/bar_color_define.html'
-
-
-
-<iframe width="100%" height="800px" src="figs/bar_color_define.html"></iframe>
+<iframe  src="figs/bar_color_define.html"></iframe>
 
 ## Bar坐标轴缩放
 
@@ -242,14 +214,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-
-
-
-    '/Users/wzf/Desktop/code/shujunge_package/Visualization/my_pyecharts/figs/bar_slider.html'
-
-
-
-<iframe width="100%" height="800px" src="figs/bar_slider.html"></iframe>
+<iframe src="figs/bar_slider.html"></iframe>
 
 
 ```python
@@ -266,14 +231,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-
-
-
-    '/Users/wzf/Desktop/code/shujunge_package/Visualization/my_pyecharts/figs/bar_inside.html'
-
-
-
-<iframe width="100%" height="800px" src="figs/bar_inside.html"></iframe>
+<iframe  src="figs/bar_inside.html"></iframe>
 
 ## Bar堆叠显示
 
@@ -283,9 +241,6 @@ import pandas as pd
 x = pd.DataFrame([[112,34,20,0.2,80,0.8,5,0.5,5,0.5],[23, 56,10,0.1,90,0.9,3,0.3,7,0.7]],columns=['num','num1','reject','rejectRate','pass','passRate','reject1','rejectRate1', 'pass1','passRate1'])
 x.head()
 ```
-
-
-
 
 ```python
 from pyecharts import options as opts
@@ -381,8 +336,4 @@ grid.load_javascript()
 grid.render_notebook()
 
 ```
-
-    '/Users/wzf/Desktop/code/shujunge_package/Visualization/my_pyecharts/figs/multi_bar.html'
-
-
-<iframe width="100%" height="800px" src="figs/multi_bar.html"></iframe>
+<iframe src="figs/multi_bar.html"></iframe>

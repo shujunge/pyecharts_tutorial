@@ -80,7 +80,7 @@ bar.render_notebook()
 
 ```
 
-<iframe width="100%" height="800px" src="figs/bar_base_config.html"></iframe>
+<iframe width="100%" height="100%" src="figs/bar_base_config.html"></iframe>
 
 ## Bar渐变圆柱可视化
 
@@ -114,7 +114,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-<iframe width="100%" height="800px" src="figs/bar_color.html"></iframe>
+<iframe width="100%" height="100%" src="figs/bar_color.html"></iframe>
 
 ## Bar柱状图动画延迟
 
@@ -149,7 +149,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-<iframe width="100%" height="800px" src="figs/bar_delay.html"></iframe>
+<iframe width="100%" height="100%" src="figs/bar_delay.html"></iframe>
 
 ## Bar-自定义柱状颜色
 
@@ -189,7 +189,7 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-<iframe width="100%" height="800px" src="figs/bar_color_define.html"></iframe>
+<iframe width="100%" height="100%" src="figs/bar_color_define.html"></iframe>
 
 ## Bar坐标轴缩放
 
@@ -223,7 +223,7 @@ bar= (
 bar.load_javascript()
 bar.render_notebook()
 ```
-<iframe width="100%" height="800px" src="figs/bar_inside.html"></iframe>
+<iframe width="100%" height="100%" src="figs/bar_inside.html"></iframe>
 
 ## Bar堆叠显示
 
@@ -323,7 +323,7 @@ grid.render_notebook()
 
 ```
 
-<iframe width="100%" height="800px" src="figs/multi_bar.html"></iframe>
+<iframe width="100%" height="100%" src="figs/multi_bar.html"></iframe>
 
 # Graph 显示
 
@@ -355,5 +355,5 @@ c.load_javascript()
 c.render_notebook()
 ```
 
-<iframe width="100%" height="800px" src="figs/graph.html"></iframe>
+<iframe width="100%" height="100%" src="figs/graph.html"></iframe>
 

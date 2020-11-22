@@ -1,6 +1,6 @@
 # [**pyechart教程**](https://github.com/pyecharts/pyecharts-gallery)
 
-
+![数据可视化教程](./READMD.md)
 ## 基本介绍
 
 ### 安装pyecharts包

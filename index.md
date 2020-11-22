@@ -1,6 +1,6 @@
 # **pyechart教程**
 
-[数据可视化教程](./README.md 'include :type=code')
+[数据可视化教程](./README.md)
 ## 基本介绍
 
 ### 安装pyecharts包
